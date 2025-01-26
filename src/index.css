@@ -1,9 +1,13 @@
+/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* index.css */
-/* Example fade-in animation */
+/* ---------------------------------
+   Custom Animations & Classes
+----------------------------------- */
+
+/* Fade In */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -12,7 +16,93 @@
     opacity: 1;
   }
 }
-
 .animate-fadeIn {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Fade Out */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.animate-fadeOut {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+/* Slide In Up */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slideInUp {
+  animation: slideInUp 0.75s ease-in-out forwards;
+}
+
+/* Scale Up */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-scaleUp {
+  animation: scaleUp 0.5s ease-in-out forwards;
+}
+
+/* Spin In */
+@keyframes spinIn {
+  from {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+.animate-spinIn {
+  animation: spinIn 1s ease-in-out forwards;
+}
+
+/* Single Pulse (e.g., subtle attention grab) */
+@keyframes pulseOnce {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-pulseOnce {
+  animation: pulseOnce 1s ease-in-out;
+}
+
+/* Hover Highlight
+   Transitions the background and text color when hovered */
+.animate-highlight {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.animate-highlight:hover {
+  background-color: #ff0; /* change as desired */
+  color: #000;
 }
