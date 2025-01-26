@@ -17,7 +17,7 @@
   }
 }
 .animate-fadeIn {
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 0.5s ease-in-out forwards; /* Reduced duration for snappier effect */
 }
 
 /* Fade Out */
@@ -30,7 +30,7 @@
   }
 }
 .animate-fadeOut {
-  animation: fadeOut 1s ease-in-out forwards;
+  animation: fadeOut 0.5s ease-in-out forwards;
 }
 
 /* Slide In Up */
@@ -45,7 +45,7 @@
   }
 }
 .animate-slideInUp {
-  animation: slideInUp 0.75s ease-in-out forwards;
+  animation: slideInUp 0.5s ease-in-out forwards;
 }
 
 /* Scale Up */
