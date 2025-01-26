@@ -14,8 +14,13 @@ function Certifications() {
       expectedCompletion: 'April 2025',
     },
     {
-      name: 'Full Stack Development, Software Engineering Certificates',
+      name: 'Full Stack Development & Software Engineering Certificates',
       organization: 'Coding Temple',
+      subCerts: [
+        'Frontend Development Certification',
+        'Backend Development Certification',
+        'Backend Specialization Certification'
+      ]
     },
     {
       name: 'Software Developer Certification',
@@ -30,6 +35,10 @@ function Certifications() {
     },
     {
       name: 'University of California, Riverside',
+      details: 'Relevant Coursework',
+    },
+    {
+      name: 'Mt. San Antonio College',
       details: 'Relevant Coursework',
     },
   ];
@@ -65,6 +74,20 @@ function Certifications() {
                 )}
                 {cert.organization && (
                   <span className="text-sm text-gray-600">{cert.organization}</span>
+                )}
+                {cert.subCerts && (
+                  <div className="mt-2 space-y-2">
+                    {cert.subCerts.map((subCert, idx) => (
+                      <div 
+                        key={idx}
+                        className="flex items-center justify-center text-sm text-gray-600"
+                      >
+                        <span className="mx-1 text-xs">•</span>
+                        {subCert}
+                        <span className="mx-1 text-xs">•</span>
+                      </div>
+                    ))}
+                  </div>
                 )}
               </li>
             ))}
