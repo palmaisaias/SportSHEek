@@ -11,7 +11,7 @@ function Footer() {
         </div>
         <div className="flex space-x-6 mb-6 animate-scaleUp">
           <a
-            href="mailto:isaias.palma@example.com"
+            href="mailto:palmaisaias@yahoo.com"
             className="text-gray-300 hover:text-white transition-colors text-2xl"
             aria-label="Email"
           >
@@ -34,15 +34,6 @@ function Footer() {
             aria-label="GitHub"
           >
             <FaGithub />
-          </a>
-          <a
-            href="https://twitter.com/isaiaspalma"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-300 hover:text-white transition-colors text-2xl"
-            aria-label="Twitter"
-          >
-            <FaTwitter />
           </a>
         </div>
         <p className="text-gray-400 animate-fadeIn">

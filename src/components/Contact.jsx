@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { FaEnvelope, FaPaperPlane } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -10,9 +12,23 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Handle form submission (e.g., send to an API endpoint or email service)
-    alert('Form submitted!');
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+
+    const serviceID = 'service_8g8l37s';     // Your Service ID
+    const templateID = 'template_va7kegi';   // Your Template ID
+    const publicKey = 'JPQxpxvPky1uNQ74r';   // Your Public Key
+
+    emailjs.send(serviceID, templateID, formData, publicKey)
+      .then((response) => {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+        setIsSubmitting(false);
+      })
+      .catch((error) => {
+        console.error('Failed to send message:', error);
+        alert('Failed to send message. Please try again.');
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -66,9 +82,12 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="flex items-center justify-center bg-blue-500 text-white py-3 rounded hover:bg-blue-600 transition-colors animate-pulseOnce"
+            disabled={isSubmitting}
+            className={`flex items-center justify-center bg-blue-500 text-white py-3 rounded hover:bg-blue-600 transition-colors animate-pulseOnce ${
+              isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
           >
-            Send Message
+            {isSubmitting ? 'Sending...' : 'Send Message'}
             <FaPaperPlane className="ml-2 animate-bounce" />
           </button>
         </form>
