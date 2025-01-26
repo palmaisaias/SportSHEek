@@ -85,7 +85,7 @@ function Navbar() {
             className="text-2xl text-gray-800 hover:text-blue-500 transition-colors focus:outline-none"
             aria-label="Toggle Menu"
           >
-            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+            <FaBars />
           </button>
         </div>
       </div>
@@ -102,6 +102,16 @@ function Navbar() {
           ></div>
           {/* Menu */}
           <div className="md:hidden fixed top-0 left-0 w-full h-full bg-white shadow-lg animate-fadeIn z-50">
+            {/* Close Button */}
+            <div className="absolute top-4 right-4">
+              <button
+                onClick={toggleMobileMenu}
+                className="text-2xl text-gray-800 hover:text-blue-500 transition-colors focus:outline-none"
+                aria-label="Close Menu"
+              >
+                <FaTimes />
+              </button>
+            </div>
             <ul className="flex flex-col items-center justify-center space-y-6 h-full">
               {['landing', 'skills', 'projects', 'certifications', 'contact'].map((section) => (
                 <li key={section}>
