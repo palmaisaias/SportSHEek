@@ -5,12 +5,22 @@ function Navbar() {
   const [activeSection, setActiveSection] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Define all sections with their exact IDs
+  const sections = [
+    { name: 'landing', label: 'Landing' },
+    { name: 'skills', label: 'Skills' },
+    { name: 'projects', label: 'Projects' },
+    { name: 'certifications', label: 'Certifications' },
+    { name: 'currently-reading', label: 'Currently Reading' }, // Updated ID
+    { name: 'contact', label: 'Contact' },
+  ];
+
   // Handle active section based on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('section');
+      const sectionElements = document.querySelectorAll('section');
       let current = '';
-      sections.forEach((section) => {
+      sectionElements.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         if (window.scrollY >= sectionTop - sectionHeight / 3) {
@@ -61,17 +71,17 @@ function Navbar() {
         </div>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
-          {['landing', 'skills', 'projects', 'certifications', 'contact'].map((section) => (
-            <li key={section}>
+          {sections.map((section) => (
+            <li key={section.name}>
               <a
-                href={`#${section}`}
-                onClick={(e) => handleLinkClick(e, section)}
+                href={`#${section.name}`}
+                onClick={(e) => handleLinkClick(e, section.name)}
                 className={`relative text-lg font-medium ${
-                  activeSection === section ? 'text-blue-500' : 'text-gray-800'
+                  activeSection === section.name ? 'text-blue-500' : 'text-gray-800'
                 } hover:text-blue-500 transition-colors`}
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-                {activeSection === section && (
+                {section.label}
+                {activeSection === section.name && (
                   <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-500 rounded-full animate-fadeIn"></span>
                 )}
               </a>
@@ -113,16 +123,16 @@ function Navbar() {
               </button>
             </div>
             <ul className="flex flex-col items-center justify-center space-y-6 h-full">
-              {['landing', 'skills', 'projects', 'certifications', 'contact'].map((section) => (
-                <li key={section}>
+              {sections.map((section) => (
+                <li key={section.name}>
                   <a
-                    href={`#${section}`}
-                    onClick={(e) => handleLinkClick(e, section)}
+                    href={`#${section.name}`}
+                    onClick={(e) => handleLinkClick(e, section.name)}
                     className={`text-xl font-medium ${
-                      activeSection === section ? 'text-blue-500' : 'text-gray-800'
+                      activeSection === section.name ? 'text-blue-500' : 'text-gray-800'
                     } hover:text-blue-500 transition-colors`}
                   >
-                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                    {section.label}
                   </a>
                 </li>
               ))}

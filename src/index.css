@@ -103,6 +103,6 @@
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .animate-highlight:hover {
-  background-color: #ff0; /* change as desired */
+  background-color: rgb(237, 237, 164); /* change as desired */
   color: #000;
 }

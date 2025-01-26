@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Certifications from '../components/Certifications';
+import CurrentlyReading from '../components/CurrentlyReading';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Skills />
       <Projects />
       <Certifications />
+      <CurrentlyReading />
       <Contact />
       <Footer />
     </div>
