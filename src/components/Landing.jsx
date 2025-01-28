@@ -1,27 +1,31 @@
-import React from 'react';
+import React from "react";
 
 function Landing() {
   return (
     <section
       id="landing"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-animated px-4 animate-fadeIn font-sans relative"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-pink-100 via-purple-100 to-pink-100 px-4 animate-fadeIn font-serif relative"
     >
-      <img
-        src="https://media.licdn.com/dms/image/v2/D5603AQHWo0rqTw2yGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727907970976?e=1743638400&v=beta&t=45AQwSOb1RAiWv-pRo59-oV2K_-V91eZoOdJgDbXo1w"
-        alt="Portrait of Isaias Palma, Full-Stack Developer"
-        className="w-32 h-32 rounded-full mb-6 animate-spinIn"
-      />
-      <h2 className="text-4xl sm:text-5xl font-semibold mb-4 text-center text-gray-800 transition-all duration-700 ease-in-out animate-slideInUp">
-        Hello, I’m Isaias Palma
-      </h2>
-      <p className="text-lg sm:text-xl text-gray-700 max-w-2xl text-center mb-8 animate-scaleUp">
-        I’m a Full-Stack Developer specializing in building exceptional digital experiences.
+      {/* Decorative Elements */}
+      <div className="absolute top-10 left-10 w-24 h-24 bg-purple-200 rounded-full opacity-40 blur-3xl animate-pulseOnce"></div>
+      <div className="absolute bottom-10 right-10 w-24 h-24 bg-pink-200 rounded-full opacity-40 blur-3xl animate-pulseOnce"></div>
+
+      {/* Blog Title */}
+      <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-800 mb-6 animate-slideInUp text-center">
+        Welcome to sportSHEek
+      </h1>
+
+      {/* Subtitle */}
+      <p className="text-xl sm:text-2xl text-gray-700 max-w-3xl text-center mb-8 animate-scaleUp">
+        Explaining sports so you don’t sound clueless at the bar.
       </p>
+
+      {/* CTA Button */}
       <a
-        href="#projects"
-        className="px-6 py-3 bg-blue-500 text-white rounded shadow hover:bg-blue-600 hover:shadow-lg transition-colors transition-shadow animate-pulseOnce flex items-center"
+        href="#latest-posts"
+        className="px-8 py-4 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 hover:shadow-lg transition-colors transition-shadow animate-pulseOnce flex items-center"
       >
-        View My Work
+        Explore the Blog
         <svg
           className="w-5 h-5 ml-2 animate-bounce"
           fill="none"
@@ -29,20 +33,30 @@ function Landing() {
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
         </svg>
       </a>
 
       {/* Scroll Indicator */}
-      <a href="#projects" className="absolute bottom-10 animate-bounce">
+      <a href="#latest-posts" className="absolute bottom-10 animate-bounce">
         <svg
-          className="w-8 h-8 text-blue-500"
+          className="w-8 h-8 text-purple-600"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
         </svg>
       </a>
     </section>

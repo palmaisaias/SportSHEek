@@ -8,10 +8,10 @@ function Navbar() {
   // Define all sections with their exact IDs
   const sections = [
     { name: 'landing', label: 'Landing' },
-    { name: 'skills', label: 'Skills' },
-    { name: 'projects', label: 'Projects' },
-    { name: 'certifications', label: 'Certifications' },
-    { name: 'currently-reading', label: 'Currently Reading' }, // Updated ID
+    { name: 'skills', label: 'Sports Categories' },
+    { name: 'projects', label: 'Featured' },
+    // { name: 'certifications', label: 'Certifications' },
+    // { name: 'currently-reading', label: 'Currently Reading' }, // Updated ID
     { name: 'contact', label: 'Contact' },
   ];
 
@@ -66,8 +66,8 @@ function Navbar() {
   return (
     <nav className="bg-white sticky top-0 z-40 shadow animate-fadeIn">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-blue-500 animate-slideInUp">
-          My Portfolio
+        <div className="text-2xl font-bold text-purple-600 animate-slideInUp">
+          sportSHEek
         </div>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
@@ -77,12 +77,12 @@ function Navbar() {
                 href={`#${section.name}`}
                 onClick={(e) => handleLinkClick(e, section.name)}
                 className={`relative text-lg font-medium ${
-                  activeSection === section.name ? 'text-blue-500' : 'text-gray-800'
+                  activeSection === section.name ? 'text-purple-600' : 'text-gray-800'
                 } hover:text-blue-500 transition-colors`}
               >
                 {section.label}
                 {activeSection === section.name && (
-                  <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-500 rounded-full animate-fadeIn"></span>
+                  <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-purple-600 rounded-full animate-fadeIn"></span>
                 )}
               </a>
             </li>
