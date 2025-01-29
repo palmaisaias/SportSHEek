@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Landing from '../components/Landing';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
+import Skills from '../components/SportsCategories';
+import Projects from '../components/Featured';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 

@@ -7,13 +7,9 @@ function SportsCategories() {
   const categories = [
     { name: 'Basketball', icon: <FaBasketballBall className="text-orange-600" /> },
     { name: 'Running', icon: <FaRunning className="text-red-500" /> },
-    { name: 'Strength Training', icon: <FaDumbbell className="text-gray-600" /> },
-    { name: 'Swimming', icon: <FaSwimmer className="text-blue-600" /> },
     { name: 'Football', icon: <FaFootballBall className="text-yellow-600" /> },
     { name: 'Tennis', icon: <GiTennisRacket className="text-green-600" /> },
     { name: 'Soccer', icon: <GiSoccerBall className="text-teal-600" /> },
-    { name: 'Cycling', icon: <GiCycling className="text-amber-600" /> },
-    { name: 'Yoga & Wellness', icon: <FaSpa className="text-purple-600" /> },
   ];
 
   return (

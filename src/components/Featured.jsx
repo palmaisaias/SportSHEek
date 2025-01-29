@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-function Projects() {
+function Featured() {
   const posts = [
     {
       title: 'Chiefs Make It to the Super Bowl for the Third Straight Time',
@@ -163,4 +163,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Featured;
