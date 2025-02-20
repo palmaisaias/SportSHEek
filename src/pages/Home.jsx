@@ -5,6 +5,7 @@ import Skills from '../components/SportsCategories';
 import Projects from '../components/Featured';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Quotes from '../components/Quotes'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Landing />
       <Skills />
       <Projects />
+      <Quotes />
       <Contact />
       <Footer />
     </div>

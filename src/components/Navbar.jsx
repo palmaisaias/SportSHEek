@@ -66,8 +66,12 @@ function Navbar() {
   return (
     <nav className="bg-white sticky top-0 z-40 shadow animate-fadeIn">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-purple-600 animate-slideInUp">
-          sportSHEek
+        {/* Title with Logo */}
+        <div className="flex items-center">
+          <img src="/logo.png" alt="Logo" className="h-8 w-auto mr-2" />
+          <div className="text-2xl font-bold text-purple-600 animate-slideInUp">
+            sportSHEek
+          </div>
         </div>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
