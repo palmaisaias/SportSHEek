@@ -39,6 +39,13 @@ function Featured() {
       fullContent:
         'The Tennis Open was full of unexpected twists, with emerging talents challenging seasoned champions. Every match was a display of skill, perseverance, and tactical brilliance. The tournament’s unexpected outcomes inspired many and proved that sometimes the underdog can shine the brightest on the grand stage.',
     },
+    {
+      id: 5,
+      title: "49ers' Offseason Drama: Deebo's Departure and Purdy's Paycheck Predicament",
+      image: 'https://a.espncdn.com/photo/2024/1213/r1427354_1296x518_5-2.jpg',
+      shortDescription: "The 49ers face a stormy offseason with trade requests, contract talks, and injury comebacks.",
+      fullContent: "The 49ers’ offseason is serving up enough drama to make The Real Housewives look tame. Deebo Samuel wants out, Brock Purdy is eyeing a payday that could make Silicon Valley blush, and the team is juggling injuries like a circus act. GM John Lynch is stuck playing mediator, trying to move Samuel while also deciding if Purdy’s Cinderella story is worth $50 million a year. Meanwhile, Trent Williams and Christian McCaffrey are on the mend, hoping to avoid another season of injury-induced existential crises. With a disastrous 6-11 season in the rearview, the 49ers need to make some serious moves—or risk becoming the NFL’s next cautionary tale."
+    }
   ];
 
   // State to track the currently selected story for the modal
