@@ -68,7 +68,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Title with Logo */}
         <div className="flex items-center">
-          <img src="/logo.png" alt="Logo" className="h-8 w-auto mr-2" />
+          <img src="/pngLOGO.png" alt="Logo" className="h-8 w-auto mr-2" />
           <div className="text-2xl font-bold text-purple-600 animate-slideInUp">
             sportSHEek
           </div>

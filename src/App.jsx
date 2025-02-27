@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import SplashScreen from './components/SplashScreen';
 import Home from './pages/Home';
+import SoccerPage from './pages/Soccer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -16,7 +18,17 @@ function App() {
 
   return (
     <>
-      {showSplash ? <SplashScreen /> : <Home />}
+      {showSplash ? (
+        <SplashScreen />
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/soccer" element={<SoccerPage />} />
+            {/* Add additional routes for other sports categories as needed */}
+          </Routes>
+        </BrowserRouter>
+      )}
     </>
   );
 }
