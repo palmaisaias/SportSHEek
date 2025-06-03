@@ -17,7 +17,7 @@ function Landing() {
 
       {/* sportSHEek Logo Image */}
       <img
-        src="/ssLOG.webp"
+        src="/pngLOGO.png"
         alt="sportSHEek Logo"
         className="w-56 h-34 mb-8 animate-fadeIn"
       />
