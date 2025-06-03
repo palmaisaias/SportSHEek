@@ -6,7 +6,7 @@ const stories = [
   {
     id: 1,
     title: 'Football Fiasco: When Chaos Looked Like Strategy',
-    image: 'https://images.unsplash.com/photo-1606788075763-0b27dcbb48dc',
+    image: 'https://images.unsplash.com/photo-1450121982620-84a745035fa8?q=80&w=2470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     shortDescription:
       'A football game so dramatic it could’ve been written by Shonda Rhimes.',
     fullContent:
@@ -15,7 +15,7 @@ const stories = [
   {
     id: 2,
     title: 'Basketball Championship or a Dunk-Fueled Soap Opera?',
-    image: 'https://images.unsplash.com/photo-1551754653-51a94e1d3b9d',
+    image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=2690&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     shortDescription:
       'Think: high-flying drama with a side of sweaty suspense and questionable fouls.',
     fullContent:
@@ -24,7 +24,7 @@ const stories = [
   {
     id: 3,
     title: 'Marathon Madness: 26.2 Miles of WTF Endurance',
-    image: 'https://images.unsplash.com/photo-1520975918311-258e8bbd3c5d',
+    image: 'https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?q=80&w=2585&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     shortDescription:
       'Thousands ran. I watched from my couch with a donut. Zero regrets.',
     fullContent:
@@ -33,7 +33,7 @@ const stories = [
   {
     id: 4,
     title: 'Tennis Tantrums & Underdog Glory: The Open Breakdown',
-    image: 'https://images.unsplash.com/photo-1593113934981-d0b87e5a9b8c',
+    image: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     shortDescription:
       'Rackets were smashed, legends were humbled, and one newbie nearly broke the internet.',
     fullContent:
