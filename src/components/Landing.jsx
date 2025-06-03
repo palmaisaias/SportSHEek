@@ -11,19 +11,26 @@ function Landing() {
       <div className="absolute bottom-10 right-10 w-24 h-24 bg-pink-200 rounded-full opacity-40 blur-3xl animate-pulseOnce"></div>
 
       {/* Blog Title */}
-      <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-800 mb-6 animate-slideInUp text-center">
-        Welcome to sportSHEek
+      <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-800 mb-4 animate-slideInUp text-center">
+        Welcome to
       </h1>
+
+      {/* sportSHEek Logo Image */}
+      <img
+        src="/ssLOG.webp"
+        alt="sportSHEek Logo"
+        className="w-56 h-34 mb-8 animate-fadeIn"
+      />
 
       {/* Subtitle */}
       <p className="text-xl sm:text-2xl text-gray-700 max-w-3xl text-center mb-8 animate-scaleUp">
-        Explaining sports so you don’t sound clueless at the bar.
+        Sports talk without the mansplaining.
       </p>
 
       {/* CTA Button */}
       <a
         href="#latest-posts"
-        className="px-8 py-4 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 hover:shadow-lg transition-colors transition-shadow animate-pulseOnce flex items-center"
+        className="px-8 py-4 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 hover:shadow-lg animate-pulseOnce flex items-center"
       >
         Explore the Blog
         <svg

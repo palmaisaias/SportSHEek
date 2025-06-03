@@ -2,51 +2,54 @@ import React, { useState } from 'react';
 
 function Featured() {
   // Dummy data for stories
-  const stories = [
-    {
-      id: 1,
-      title: 'Exciting Football Match',
-      image: '/images/football.jpg', // Place your image in the public/images folder
-      shortDescription:
-        'A thrilling match between top teams, full of unexpected turns and amazing plays.',
-      fullContent:
-        'This match was a roller coaster of emotions, starting with an early goal and fierce competition throughout. Both teams demonstrated brilliant strategy and skill, making it one of the most memorable games of the season. The final moments left fans on the edge of their seats as every pass and tackle counted.',
-    },
-    {
-      id: 2,
-      title: 'Basketball Championship Highlights',
-      image: '/images/basketball.jpg',
-      shortDescription:
-        'The championship game showcased spectacular dunks and nail-biting moments.',
-      fullContent:
-        'In the championship showdown, every second was packed with energy and high stakes. Players pushed their limits, creating a blend of athleticism and strategy that captivated the audience. The intensity of the game and the dramatic finish set a new standard for what fans can expect from top-level basketball.',
-    },
-    {
-      id: 3,
-      title: 'Marathon: A Test of Endurance',
-      image: '/images/marathon.jpg',
-      shortDescription:
-        'Runners from all over the world participated in a grueling test of endurance and spirit.',
-      fullContent:
-        'The marathon was not just a race, but a celebration of human determination. Challenging weather conditions and tough terrains did little to stop these athletes from pushing forward. Each runner showcased resilience and passion, turning the event into a true testament to endurance and the human spirit.',
-    },
-    {
-      id: 4,
-      title: 'Tennis Open: Upsets and Triumphs',
-      image: '/images/tennis.jpg',
-      shortDescription:
-        'A tournament full of surprises, where underdogs made a remarkable run against seasoned players.',
-      fullContent:
-        'The Tennis Open was full of unexpected twists, with emerging talents challenging seasoned champions. Every match was a display of skill, perseverance, and tactical brilliance. The tournament’s unexpected outcomes inspired many and proved that sometimes the underdog can shine the brightest on the grand stage.',
-    },
-    {
-      id: 5,
-      title: "49ers' Offseason Drama: Deebo's Departure and Purdy's Paycheck Predicament",
-      image: 'https://a.espncdn.com/photo/2024/1213/r1427354_1296x518_5-2.jpg',
-      shortDescription: "The 49ers face a stormy offseason with trade requests, contract talks, and injury comebacks.",
-      fullContent: "The 49ers’ offseason is serving up enough drama to make The Real Housewives look tame. Deebo Samuel wants out, Brock Purdy is eyeing a payday that could make Silicon Valley blush, and the team is juggling injuries like a circus act. GM John Lynch is stuck playing mediator, trying to move Samuel while also deciding if Purdy’s Cinderella story is worth $50 million a year. Meanwhile, Trent Williams and Christian McCaffrey are on the mend, hoping to avoid another season of injury-induced existential crises. With a disastrous 6-11 season in the rearview, the 49ers need to make some serious moves—or risk becoming the NFL’s next cautionary tale."
-    }
-  ];
+const stories = [
+  {
+    id: 1,
+    title: 'Football Fiasco: When Chaos Looked Like Strategy',
+    image: 'https://images.unsplash.com/photo-1606788075763-0b27dcbb48dc',
+    shortDescription:
+      'A football game so dramatic it could’ve been written by Shonda Rhimes.',
+    fullContent:
+      'Okay, imagine this: two football teams (both thinking they’re God’s gift to turf) go at it in a game that had more plot twists than a telenovela. We’re talking early goals, last-minute scrambles, and some truly unhinged decisions that had fans screaming into their nachos. Every time I looked up from pretending to work, someone was yelling about a fumble, a flag, or “WHAT THE HELL WAS THAT PLAY?!” Honestly, it felt like a Bravo reunion special with more concussions. Iconic.'
+  },
+  {
+    id: 2,
+    title: 'Basketball Championship or a Dunk-Fueled Soap Opera?',
+    image: 'https://images.unsplash.com/photo-1551754653-51a94e1d3b9d',
+    shortDescription:
+      'Think: high-flying drama with a side of sweaty suspense and questionable fouls.',
+    fullContent:
+      'So apparently this basketball game was the *championship*—aka the NBA’s version of a season finale. There were dunks that defied gravity (and maybe physics?), fouls that had people side-eyeing refs harder than Dave when I eat his lunch from the fridge, and one buzzer-beater that legit made a grown man cry in the breakroom. It was tense, it was loud, and honestly, it was hotter than my last Hinge date. No notes.'
+  },
+  {
+    id: 3,
+    title: 'Marathon Madness: 26.2 Miles of WTF Endurance',
+    image: 'https://images.unsplash.com/photo-1520975918311-258e8bbd3c5d',
+    shortDescription:
+      'Thousands ran. I watched from my couch with a donut. Zero regrets.',
+    fullContent:
+      'I don’t know what possesses someone to run for *hours* straight unless they’re being chased or trying to avoid their ex, but hey—these folks did it. Rain? Hills? Cramps? Irrelevant. They just kept going, like the Energizer Bunny with shin splints. Some collapsed, some cried, and one guy proposed at the finish line (barf). It was emotional, inspirational, and made me realize my Fitbit thinks I’m dead. Good for them, though!'
+  },
+  {
+    id: 4,
+    title: 'Tennis Tantrums & Underdog Glory: The Open Breakdown',
+    image: 'https://images.unsplash.com/photo-1593113934981-d0b87e5a9b8c',
+    shortDescription:
+      'Rackets were smashed, legends were humbled, and one newbie nearly broke the internet.',
+    fullContent:
+      'Picture it: fancy tennis outfits, rich people clapping politely, and then—BOOM—chaos. The Tennis Open served up (pun intended, fight me) a glorious mess of upsets where baby-faced newbies beat the veterans like it was a Disney movie. One poor dude chucked his racket into the crowd (hi, anger issues), and another cried in the post-game interview. Honestly, it was a better emotional rollercoaster than The Bachelor finale, minus the hot tubs.'
+  },
+  {
+    id: 5,
+    title: "49ers' Offseason: A Soap Opera With Shoulder Pads",
+    image: 'https://a.espncdn.com/photo/2024/1213/r1427354_1296x518_5-2.jpg',
+    shortDescription:
+      "The 49ers are spiraling into chaos and it’s giving ‘corporate dumpster fire’ energy.",
+    fullContent:
+      "Let’s talk about the 49ers, who are out here doing the NFL version of a public breakup on Instagram Live. Deebo Samuel is like “I’m done,” Brock Purdy wants a salary bump big enough to buy a tech startup, and John Lynch—aka team dad—is scrambling to keep the whole thing from imploding. Injuries? Check. Drama? Double check. If they don’t pull it together soon, we’re gonna be watching them on Hard Knocks crying into their protein shakes. Just saying: maybe hire a therapist before a new linebacker?"
+  }
+];
+
 
   // State to track the currently selected story for the modal
   const [selectedStory, setSelectedStory] = useState(null);
